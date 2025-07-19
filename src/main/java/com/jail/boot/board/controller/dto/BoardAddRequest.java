@@ -8,6 +8,8 @@ import lombok.ToString;
 @Setter
 @ToString
 public class BoardAddRequest {
+	
+	private int boardNo;
 	private String boardTitle;
 	private String boardContent;
 	private int memberNo;

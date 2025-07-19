@@ -11,10 +11,10 @@
 	<selectKey order="BEFORE" resultType="_int" keyProperty="boardNo">
 		SELECT SEQ_BOARD_NO.NEXTVAL FROM DUAL
 	</selectKey>	
-	INSERT INTO FREEBOARD VALUES( #{boardNo},
+	INSERT INTO FREEBOARD VALUES(#{boardNo},
                    #{boardTitle},
                     #{boardContent},
-                    DEFAULT, NULL, DEFAULT, DEFAULT, #{memberNo}))
+                    DEFAULT, NULL, DEFAULT, DEFAULT, #{memberNo})
 	</insert>
 </mapper>
 	
